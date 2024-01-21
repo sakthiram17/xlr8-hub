@@ -1,0 +1,21 @@
+.modal {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0.9;
+    margin: auto;
+    text-align: center;
+    z-index: 100;
+    backdrop-filter: blur(100px);
+}
+
+.success {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.error {
+    background-color: #ff1c14;
+    color: #fff;
+}

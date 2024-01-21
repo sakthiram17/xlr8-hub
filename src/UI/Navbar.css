@@ -1,0 +1,159 @@
+:root{
+    --primary-nav :ghostwhite;
+    --secondary-text: #f5cac2;
+    --secondary-nav : #e60041;
+    --primary-color : #303179;
+    --primary-color-50 : rgb(48, 49, 121,0.5);
+    --secondary-color : rgb(20, 24, 80);
+    --main-bg : #ededed;
+    --secondary-nav-50 : rgb(48, 0, 193,0.5);;
+    --secondary-color-50 : rgb(20, 24, 80,0.5);
+    --navtext:black;
+    --navtext-alt :rgb(230, 20, 0);
+    --card-bg : rgb(247, 247, 255,0.5);
+    --primary-text : black;
+    --card-box : #ccc;
+    --text-alt: #ff7158;
+    --card-hover: #ff1600;
+    
+  }
+  html{
+    background-color: ghostwhite;
+    margin:0;padding:0;
+  }
+#root{
+    top:0;
+    margin:0;
+    left:0;
+    margin:0;padding:0;
+}
+body{
+    margin:0;padding:0;
+}
+
+.NavBar{
+    font-size:22px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
+ 
+    color:var(--navtext);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    position:relative;
+    font-weight: bold;
+    top:0;
+    margin:0;
+    left:0;
+
+    margin-bottom: 5rem;
+}
+.DarkModeIcon{
+    font-size:20px;
+
+}
+.navbar-header{
+    text-decoration: none;
+    padding: 0.25em 1em;
+    color:var(--navtext);
+    vertical-align: middle;
+    position: absolute;
+    left:0;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+.small_nav-header{
+    font-size:1.5rem;
+    font-weight:bold;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.NavBar ul{
+    text-decoration: none;
+    display: inline;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    text-align:center;
+}
+.NavbarElement{
+    text-decoration: none;
+    padding: 0.2em 1em 0.2em 1em;
+    display: inline-block;
+    color:var(--navtext);
+    transition: 0.15s;
+
+    vertical-align: middle;
+    margin-left: 20px;
+    
+}
+
+.NavbarElement:hover,.NavbarElement:active{
+    color:var(--secondary-nav);
+    transform: translateY(-5px);
+   border-radius: 3px;
+
+
+}
+.NavbarElementAlt{
+    text-decoration: none;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    display: inline-block;
+    color:var(--navtext);
+    transition: 0.15s;
+    color:whitesmoke;
+    border-radius: 0.25rem;
+    
+    vertical-align: middle;
+    margin-left: 20px;
+    background-color: inherit;
+    border-radius: 0.25rem;
+    border:solid var(--secondary-nav) 1px;
+    color:var(--secondary-nav);
+    
+}
+
+.NavbarElementAlt:hover,
+.NavbarElementAlt:active{
+    transform: translateY(-5px);
+}
+
+.NavBar button{
+    border: none;
+    color:var(--navtext);
+    background-color: inherit;
+    font-size: 25px;
+}
+.Active{
+    color:var(--secondary-nav);
+    border-radius: 3px;
+}
+.header-f{
+    color:var(--navtext);
+}
+.header-l{
+    color:var(--secondary-nav);
+}
+.btn-grp{
+     position: absolute;
+     left:5%;
+}
+.menu-button{
+    color:var(--secondary-nav);
+}
+.OpenMenu{
+    color:var(--secondary-nav);
+}
+.fa-icon{
+   padding:0rem .4rem 0.2rem 0.4rem;
+}
+.NavBar svg path {
+    color:var(--secondary-nav);
+}
+.App{
+    margin: 0;
+    padding:0;
+}

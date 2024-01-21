@@ -1,23 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
-
+import DashBoard from './Pages/Dashboard';
+import Navbar from "./UI/Navbar"
+import { useState } from 'react';
+import ControlPanel from './Pages/ControlPanel';
+import {CounterProvider} from './dataContext';
+import Logs from './UI/Logs';
 function App() {
+  const [currentPage,setPage] = useState(<DashBoard></DashBoard>)
+  const pageSwitchHandler = (event)=>{
+    let page = event.target.innerHTML;
+    console.log(page)
+    switch(page)
+    {
+      case 'Dashboard' : setPage(<DashBoard></DashBoard>)
+      break;
+      case 'Control Panel' : setPage(<ControlPanel></ControlPanel>)
+      break;
+      case 'Outliers' : setPage(<Logs></Logs>)
+      break;
+      default : setPage(<DashBoard></DashBoard>)
+    }
+    
+  }
+  const off = ()=>{
+
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CounterProvider>
+       <Navbar
+       list = {["Dashboard","Control Panel","Outliers"]}
+       first = "XLR8"
+       last = "Hub"
+       off = {off}
+       changePage = {pageSwitchHandler}
+       ></Navbar>
+      {currentPage}
+      </CounterProvider>
     </div>
   );
 }

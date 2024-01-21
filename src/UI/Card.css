@@ -1,0 +1,167 @@
+.CardElement{
+  
+    color:black;
+}
+.CardHeader{
+    color:black;
+    -weight: bold;
+    -size: 1.5rem;
+}
+.Card{
+
+    padding:1rem;
+   
+    border-radius: 10px;
+    padding: 20px;
+    width: min(500px,45vw);
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: 0.15s;
+    box-sizing: border-box;
+    margin:4%;
+    display:inline-flex;
+    -size: 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    flex:1;
+}
+.CardImage{
+    min-height: 200px;
+    width: min(300px,40vw);
+    padding: 20px;
+}
+.Card:hover{
+    transform: scale(1.1);
+   
+
+}
+.Card a{
+    overflow: wrap;
+    text-decoration: none;
+}
+.card-a{
+    text-decoration: none;
+}
+@media (max-width:800px)
+{
+    .Card{
+        margin: auto;
+        margin-top:10%;
+        margin-bottom:10%;
+        width: 90%;
+    }
+}
+.card-content{
+    -weight: bold;
+
+    padding:1rem;
+
+}
+.Card a{
+
+    
+}
+.card-content{
+    text-align: center;
+    -weight: bold;
+}
+html{
+
+}.gauge {
+    position: relative;
+    border-radius: 50%/100% 100% 0 0;
+    background-color: var(--color, rgb(156, 27, 237));
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.gauge-2{
+    background-color: rgb(55, 185, 255);
+}
+.gauge:before{
+    content: "";
+    display: block;
+    padding-top: 50%;   /* ratio of 2:1*/
+}
+.gauge .chart {
+  overflow: hidden;
+}
+.gauge .mask {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  top: 40%;
+  background-color: #fff;
+  border-radius: 50%/100% 100% 0 0;
+  opacity: 1;
+}
+
+.gauge .percentage {
+    position:  absolute;
+    top: -1px;
+    left: -1px;
+    bottom: 0;
+    right: -1px;
+    background-color: var(--background, #aaa);
+    transform:rotate(var(--rotation)); 
+    transform-origin: bottom center; 
+    transition-duration: 0.15;
+    --rotation: 180deg;
+}
+.gauge:hover {
+  --rotation: 100deg;
+}
+.gauge .value {
+  position:absolute; bottom:0%; left:0;   
+  width:100%; 
+  text-align: center;
+}
+
+.gauge .min {
+  position:absolute; 
+  bottom:0; left:5%;   
+}
+.gauge .max {
+  position:absolute; 
+  bottom:0; right:5%;   
+ }
+
+
+.guage{
+
+    width: 200px; --rotation:90deg; --color:#5cb85c; --background:#e9ecef;
+}
+
+
+.alert{
+
+    margin:auto;
+    margin-bottom: 2rem;
+    padding:1rem;
+    border-radius:5px;
+    box-shadow:0 0 15px 5px #ccc;
+    background-color: red;
+    color:whitesmoke;
+    -size: 0.8rem;
+
+    }
+    .alert h3{
+        color:white;
+    }
+.widgets{
+    display: flex;
+  
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+    padding:4rem;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: ghostwhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: min(90vw,1400px);
+    border: 1px solid #ccc;
+    margin-top:10rem;
+}

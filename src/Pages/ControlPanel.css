@@ -1,0 +1,49 @@
+.control-panel {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    background-color: ghostwhite;
+   
+    width: min(80vw,800px);
+      
+    min-height: 300px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+  }
+  
+  /* Styling for the buttons inside the control panel */
+
+  html{
+
+  }
+  .small-flex-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding:2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    border:#ccc solid 1px;
+    border-radius: 1rem;
+    width: max(30vw,600px);
+  
+  }
+  .control-panel *{
+    font-size: 1.5rem;
+  }
+  .control-page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  .control-page{
+    display: flex;
+    flex-flow: wrap;
+  }
