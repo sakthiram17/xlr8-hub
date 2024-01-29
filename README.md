@@ -1,6 +1,4 @@
-Certainly! Below is an updated version of the README with additional instructions for setting up the microcontroller, specifically for STM32F411RE:
 
----
 
 # Power Electronics Converter Monitoring and Control System
 
@@ -48,8 +46,6 @@ The third page provides a comprehensive overview of all outliers and values that
 - ReCharts: [Link to ReCharts](https://recharts.org/)
 - Firebase Realtime Database: [Link to Firebase](https://firebase.google.com/)
 - Node.js: [Link to Node.js](https://nodejs.org/)
-
-Feel free to customize and enhance the code based on your specific requirements. For any issues or inquiries, please contact [Your Contact Information].
 
 --- 
 
