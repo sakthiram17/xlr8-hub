@@ -1,0 +1,28 @@
+{
+  "name": "xlr8-hub",
+  "version": "1.0.0",
+  "description": "A simpe server to acquire data from sensors and send it to database securely also handle commands from webdashboard",
+  "main": "app.js",
+  "homepage": "https://gitname.github.io/xlr8-hub",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Sakthi Ram",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.6.5",
+    "express": "^4.18.2",
+    "parser-readline": "^1.0.2",
+    "querystring": "^0.2.1",
+    "readline": "^1.3.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "serialport": "^12.0.0",
+    "socket.io": "^4.7.4",
+    "websocket": "^1.0.34",
+    "ws": "^8.16.0"
+  }
+}
